@@ -1,10 +1,17 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import HeaderTop from './AppHeader/HeaderTop'
 
 const AppRoutes = () => {
   return (
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, explicabo. Soluta repudiandae fugit quos esse suscipit nemo laborum impedit deserunt natus eligendi vero debitis illo maxime doloremque, consectetur, autem explicabo.</p>
-    </div>
+    <BrowserRouter>
+      <HeaderTop/>
+
+      {/* <Routes>
+        <Route path='/'  element={<Home />}></Route>
+      </Routes> */}
+
+    </BrowserRouter>
   )
 }
 
