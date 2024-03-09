@@ -4,6 +4,7 @@ import logo from '../../../assets/logo.png'
 import { TiThMenu } from "react-icons/ti";
 import { IoIosCloseCircle } from "react-icons/io";
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderTop = () => {
   
@@ -16,7 +17,10 @@ const HeaderTop = () => {
   }
   return (
     <header className='header-top'>
-      <img className='logo' src={logo} alt="logo do website" />
+      <Link to="/" className='link-logo'>
+        <img className='logo' src={logo} alt="logo do website" />
+        <span className='text-logo'>Enfermeira</span>
+      </Link>
 
       {isMobile && <button
       className='btn-open'

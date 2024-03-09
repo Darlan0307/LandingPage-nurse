@@ -1,13 +1,57 @@
 .header-top{
-  .logo{
-    width: 120px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  position: relative;
+  
+  .link-logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    .logo{
+      width: 100px;
+    }
+
+    .text-logo{
+      color: white;
+      font-weight: bold;
+      background-color: #017eff;
+      padding: 10px;
+      border-radius: 0px 10px 10px 0px;
+      margin-left: -15px;
+      
+    }
+  }
+
+  .btn-close,.btn-open{
+    border: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    svg{
+      color: #242424;
+      font-size: 40px;
+    }
   }
 
   .navigation{
+    .menu{
 
+    }
+    .link-phone{
+
+    }
   }
   
-  // .mobile{
+  .mobile{
+    position: absolute;
+    left: -101vw;
+  }
 
-  // }
+  .open{
+    left: 0;
+  }
 }
