@@ -27,14 +27,16 @@ const HeaderTop = () => {
       onClick={()=>handleMenu()}
       ><TiThMenu/></button>}
 
-      <nav ref={refMenu} className={`navigation ${isMobile ?  "mobile" : ""}`}>
+      <nav ref={refMenu} className={`navigation ${isMobile ?  "mobile" : ""}`}
+      
+      >
 
         {isMobile && <button
         className='btn-close'
         onClick={()=>handleMenu()}  
         ><IoIosCloseCircle/></button>}
 
-        <ul className='menu'>
+        <ul className='menu' onClick={()=>handleMenu()}>
           <li>
             <a href="#">Home</a>
           </li>
@@ -49,7 +51,7 @@ const HeaderTop = () => {
           </li>
         </ul>
 
-        <a href="#" className='link-phone'>Fale Comigo</a>
+        <a href="#" className='link-phone' onClick={()=>handleMenu()}>Fale Comigo</a>
       </nav>
     </header>
   )
