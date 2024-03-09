@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderTop = () => {
   
-  const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
   const refMenu = useRef()
 
