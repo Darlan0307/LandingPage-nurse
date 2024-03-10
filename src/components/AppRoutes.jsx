@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import HeaderTop from './AppHeader/HeaderTop'
-import HeaderBottom from './AppHeader/HeaderBottom'
+import Home from './pages/Home'
 
 
 const AppRoutes = () => {
@@ -10,10 +10,7 @@ const AppRoutes = () => {
       <HeaderTop/>
 
       <Routes>
-        <Route path='/'  element={
-          <HeaderBottom />
-          // Home
-        }></Route>
+        <Route path='/'  element={<Home/>}></Route>
       </Routes>
 
     </BrowserRouter>
