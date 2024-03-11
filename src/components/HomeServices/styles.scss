@@ -1,0 +1,111 @@
+.home-services{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 20px;
+  margin-top: 2em;
+  position: relative;
+
+  @media (min-width: 1100px){
+    align-items: flex-start;
+  }
+  &>p{
+    color: #017eff;
+    background-color: #97c5f3;
+    padding: 5px 10px;
+    max-width: fit-content;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: calc(1.6em + .5vw);
+    text-align: center;
+    color: #017eff;
+  }
+
+  &>p,.title{
+    @media (min-width: 1100px){
+      margin-left: 4vw;
+    }
+  }
+
+  .cards{
+    margin: 2em 0;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+
+    .card{
+      position: relative;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+      padding: 20px;
+      border-radius: 20px;
+      transition: all .4s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1em;
+      max-width: 320px;
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      .title-card{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        svg{
+          color: #017eff;
+          font-size: 50px;
+        }
+
+        h4{
+          color: #242424;
+        }
+
+      }
+
+      .text-card{
+        color: #333;
+      }
+
+      .link-card{
+        background-color: #017eff;
+        padding: 5px;
+        display: flex;
+        justify-content: flex-end;
+        
+        border-radius: 20px;
+        svg{
+          font-size: 30px;
+          color: white;
+          margin-right: .5em;
+        }
+      }
+
+    }
+  }
+
+  .link-more{
+    background-color: #017eff;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 1100px){
+      position: absolute;
+      top: 3em;
+      right: 4vw;
+    }
+  }
+}

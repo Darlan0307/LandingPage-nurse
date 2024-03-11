@@ -3,8 +3,14 @@ import { DataServices } from '../../../DB/DataServices';
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa";
 import HeaderTop from '../../AppHeader/HeaderTop';
+import { useEffect } from 'react';
 
 const AllServices = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <>
       <HeaderTop textTitle='Todos os Serviços de Victoria'/>

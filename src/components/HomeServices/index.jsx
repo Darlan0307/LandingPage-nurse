@@ -10,14 +10,14 @@ const HomeServices = () => {
   return (
     <section className='home-services' id="services">
       <p>Serviços e Tratamentos</p>
-      <h2 className='title'>Veja os priscipais serviços de Victoria</h2>
+      <h2 className='title'>Veja os principais serviços de Victoria</h2>
       <div className='cards'>
       {PrimaryServices.map(service => (
         <article key={service.id} className="card">
-          <span className='icon-card'>
+          <span className='title-card'>
             {service.icon}
+            <h4>{service.title}</h4>
           </span>
-          <h3 className='title-card'>{service.title}</h3>
           <p className='text-card'>{service.description}</p>
           <a className='link-card' href={service.link} target='_blank'  rel='noreferrer'>
             <FaArrowRight/>
