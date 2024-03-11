@@ -6,7 +6,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-const HeaderTop = () => {
+const HeaderTop = ({textTitle=""}) => {
   
   const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
@@ -15,22 +15,28 @@ const HeaderTop = () => {
   const handleMenu = () => {
     refMenu.current.classList.toggle('open')
   }
+
   return (
-    <header className='header-top'>
+    <header className={`header-top ${textTitle ? 'header-services' : ''}`} id='home'>
       <Link to="/" className='link-logo'>
         <img className='logo' src={logo} alt="logo do website" />
         <span className='text-logo'>Enfermeira</span>
       </Link>
 
-      {isMobile && <button
+      {textTitle ? (
+        <>
+          <h1>{textTitle}</h1>
+          <a href="#" className='link-phone'>Fale Comigo</a>
+        </>
+      ):(
+        <>
+          {isMobile && <button
       className='btn-open'
       onClick={()=>handleMenu()}
       ><TiThMenu/></button>}
 
       <nav ref={refMenu} className={`navigation ${isMobile ?  "mobile" : ""}`}
-      
       >
-
         {isMobile && <button
         className='btn-close'
         onClick={()=>handleMenu()}  
@@ -38,21 +44,23 @@ const HeaderTop = () => {
 
         <ul className='menu' onClick={()=>handleMenu()}>
           <li>
-            <a href="#">Home</a>
+          <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Serviços</a>
+            <a href="#services">Serviços</a>
           </li>
           <li>
-            <a href="#">Depoimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
           </li>
           <li>
-            <a href="#">Contatos</a>
+            <a href="#contatos">Contatos</a>
           </li>
         </ul>
 
         <a href="#" className='link-phone' onClick={()=>handleMenu()}>Fale Comigo</a>
       </nav>
+        </>
+      )}
     </header>
   )
 }
