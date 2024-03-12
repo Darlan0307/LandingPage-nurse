@@ -61,7 +61,7 @@ $bg:#d2aee5;
     right: 5%;
     bottom: 5%;
     text-decoration: none;
-    background-color: #017eff;
+    background-color: $primary;
     padding: 12px;
     border-radius: 50%;
     animation: kick .7s ease-out 3s infinite alternate;

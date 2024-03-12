@@ -6,9 +6,6 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-// Animation
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 
 const HeaderTop = ({textTitle=""}) => {
   
@@ -20,24 +17,8 @@ const HeaderTop = ({textTitle=""}) => {
     refMenu.current.classList.toggle('open')
   }
 
-  //  GSAP animation hook
-  const container = useRef(null)
-
-  useGSAP(() => {
-    gsap.fromTo(container.current, {
-      opacity: 0,
-      y:-300
-    },{ 
-      opacity:1,
-      y:0,
-      ease: "back.inOut",
-      duration: 1
-    });
-  
-  }, { scope: container });
-
   return (
-    <header className={`header-top ${textTitle ? 'header-services' : ''}`} id='home' ref={container}>
+    <header className={`header-top ${textTitle ? 'header-services' : ''}`} id='home'>
       <Link to="/" className='link-logo'>
         <img className='logo' src={logo} alt="logo do website" />
         <span className='text-logo'>Enfermeira</span>
