@@ -1,3 +1,7 @@
+$primary:#017eff;
+$bg:#97c5f3;
+
+
 .home-services{
   display: flex;
   flex-direction: column;
@@ -10,8 +14,8 @@
     align-items: flex-start;
   }
   &>p{
-    color: #017eff;
-    background-color: #97c5f3;
+    color: $primary;
+    background-color: $bg;
     padding: 5px 10px;
     max-width: fit-content;
     border-radius: 15px;
@@ -21,7 +25,7 @@
   .title{
     font-size: calc(1.6em + .5vw);
     text-align: center;
-    color: #017eff;
+    color: $primary;
   }
 
   &>p,.title{
@@ -41,7 +45,7 @@
     .card{
       position: relative;
       background-color: white;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
       padding: 20px;
       border-radius: 20px;
       transition: all .4s ease-in-out;
@@ -59,7 +63,7 @@
         align-items: center;
         gap: 1em;
         svg{
-          color: #017eff;
+          color: $primary;
           font-size: 50px;
         }
 
@@ -74,11 +78,10 @@
       }
 
       .link-card{
-        background-color: #017eff;
-        padding: 5px;
+        background-color: $primary;
+        padding: 10px 5px;
         display: flex;
-        justify-content: flex-end;
-        
+        justify-content: flex-end;      
         border-radius: 20px;
         svg{
           font-size: 30px;
@@ -91,7 +94,7 @@
   }
 
   .link-more{
-    background-color: #017eff;
+    background-color: $primary;
     padding: 10px;
     color: white;
     font-weight: bold;

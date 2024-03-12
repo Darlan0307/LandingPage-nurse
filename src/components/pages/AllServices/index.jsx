@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa";
 import HeaderTop from '../../AppHeader/HeaderTop';
 import { useEffect } from 'react';
+import { IoHomeSharp } from "react-icons/io5";
 
 const AllServices = () => {
 
@@ -27,7 +28,7 @@ const AllServices = () => {
       ))}
       </div>
       <Link to="/" className='link-back'>
-        Voltar
+        <IoHomeSharp/>
       </Link>
     </section>
     </>

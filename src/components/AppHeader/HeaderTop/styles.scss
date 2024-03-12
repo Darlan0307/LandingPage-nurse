@@ -1,3 +1,5 @@
+$primary:#017eff;
+
 .header-top{
   background-color: white;
   padding: 20px;
@@ -44,6 +46,10 @@
       color: #242424;
       font-size: 40px;
     }
+
+    &:active{
+      transform: scale(.8);
+    }
   }
 
   .navigation{
@@ -69,7 +75,7 @@
         color: black;
         border-radius: 15px;
         &:hover,&:focus{
-          background-color: #017eff;
+          background-color: $primary;
           color: white;
         }
       }
@@ -93,7 +99,7 @@
     .btn-close{
       padding: 10px;
       svg{
-        color: #017eff;
+        color: $primary;
         font-size: 50px;
       }
     }
@@ -105,8 +111,6 @@
         font-size: 1.3em;
       }
     }
-
-
   }
 
   .open{
@@ -135,13 +139,13 @@
   transition: all .3s ease-in-out;
   display: block;
   position: relative;
-  background-color: #017eff;
+  background-color: $primary;
   padding: 15px;
   border-radius:20px;
   color: white;
   text-decoration: none;
   &:hover,&:focus{
-    box-shadow: 0px 0px 15px #017eff;
+    box-shadow: 0px 0px 15px $primary;
   }
 
   @media (min-width:1200px){
