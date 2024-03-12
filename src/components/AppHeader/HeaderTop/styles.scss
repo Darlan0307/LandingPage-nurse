@@ -1,4 +1,4 @@
-$primary:#017eff;
+$primary:#6660f6;
 
 .header-top{
   background-color: white;
@@ -14,6 +14,7 @@ $primary:#017eff;
     text-decoration: none;
     display: flex;
     align-items: center;
+    position: relative;
     
     &:hover{
       .logo,.text-logo{
@@ -29,11 +30,11 @@ $primary:#017eff;
       transition: all .3s ease-in-out;
       color: white;
       font-weight: bold;
-      background-color: #017eff;
+      background-color: #5752d1;
       padding: 10px;
-      border-radius: 0px 10px 10px 0px;
+      border-radius: 10px;
       margin-left: -15px;
-      
+
     }
   }
 

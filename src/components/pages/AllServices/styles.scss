@@ -1,18 +1,16 @@
-$primary:#017eff;
-// $primary:#491b6e;
-$bg:#97c5f3;
-// $bg:#ae79d3;
+$primary:#6660f6;
+$bg:#d2aee5;
 
 .all-services{
-  margin: 2em auto;
+  margin: 3em auto;
   padding: 20px;
   max-width: 1200px;
-
   .cards{
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
+    position: relative;
     .card{
       position: relative;
       width: 100%;
@@ -60,24 +58,24 @@ $bg:#97c5f3;
 
   .link-back{
     position: fixed;
-    right: 6%;
-    bottom: 6%;
+    right: 5%;
+    bottom: 5%;
     text-decoration: none;
-    z-index: 999;
     background-color: #017eff;
     padding: 12px;
-    font-weight: bold;
     border-radius: 50%;
-    animation: kick .7s ease-out infinite alternate;
+    animation: kick .7s ease-out 3s infinite alternate;
+    z-index: 10;
     svg{
-      font-size: 32px;
+      font-size:32px;
       color: white;
     }
   }
+
 }
 
 @keyframes kick{
   to{
-    transform: translateY(-10px);
+    transform: translateY(-7px);
   }
 }
