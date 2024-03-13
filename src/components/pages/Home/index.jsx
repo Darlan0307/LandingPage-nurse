@@ -3,6 +3,7 @@ import HeaderBottom from '../../AppHeader/HeaderBottom'
 import HeaderTop from '../../AppHeader/HeaderTop'
 import Dedicated from '../../Dedicated'
 import HomeServices from '../../HomeServices'
+import ChooseUs from '../../ChooseUs'
 
 const Home = () => {
   const container = useRef(null)
@@ -19,6 +20,7 @@ const Home = () => {
         <HeaderBottom/>
         <Dedicated/>
         <HomeServices/>
+        <ChooseUs/>
       </div>
     </>
   )
