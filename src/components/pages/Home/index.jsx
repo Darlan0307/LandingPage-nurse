@@ -4,6 +4,7 @@ import HeaderTop from '../../AppHeader/HeaderTop'
 import Dedicated from '../../Dedicated'
 import HomeServices from '../../HomeServices'
 import ChooseUs from '../../ChooseUs'
+import Depoiment from '../../Depoiment'
 
 const Home = () => {
   const container = useRef(null)
@@ -21,6 +22,7 @@ const Home = () => {
         <Dedicated/>
         <HomeServices/>
         <ChooseUs/>
+        <Depoiment/>
       </div>
     </>
   )
