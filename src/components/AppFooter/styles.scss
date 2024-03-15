@@ -1,0 +1,68 @@
+$primary:#6660f6;
+$bg:#d2aee5;
+
+.footer{
+  padding:20px;
+  margin-top: 3em;
+  background-color: $primary;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 3em;
+  z-index: 11;
+
+  .link-logo{
+    position: relative;
+
+    img{
+      width: 120px;
+      transition: all .5s;
+      filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.411));
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .slogan{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+  }
+
+  .redesSociais{
+    display: flex;
+    gap: 1.5em;
+    position: relative;
+
+    &::before{
+      content: 'Redes Sociais';
+      position: absolute;
+      top: -1.5em;
+      left:0;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      width: 100%;
+    }
+
+    li a{
+      display: block;
+      padding: 5px;
+
+      svg{
+        fill: white;
+        font-size: 45px;
+        transition: all .5s;
+      }
+
+      &:hover svg{
+        fill: #333;
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@ import { IoHomeSharp } from "react-icons/io5";
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Rodape from '../../AppFooter';
 
 const AllServices = () => {
 
@@ -52,6 +53,7 @@ const AllServices = () => {
         <IoHomeSharp/>
       </Link>
     </section>
+    <Rodape/>
     </>
   )
 }

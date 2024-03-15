@@ -21,7 +21,7 @@ const HeaderTop = ({textTitle=""}) => {
     <header className={`header-top ${textTitle ? 'header-services' : ''}`} id='home'>
       <Link to="/" className='link-logo'>
         <img className='logo' src={logo} alt="logo do website" />
-        <span className='text-logo'>Enfermeira</span>
+        <span className='text-logo'>Tec.Enfermagem</span>
       </Link>
 
       {textTitle ? (
@@ -58,7 +58,7 @@ const HeaderTop = ({textTitle=""}) => {
           </li>
         </ul>
 
-        <a href="#" className='link-phone' onClick={()=>handleMenu()}>Fale Comigo</a>
+        <a href="https://api.whatsapp.com/send?phone=5581989402021&text=Oii!%20tudo%20bom?" target='_blank' rel="noopener noreferrer" className='link-phone' onClick={()=>handleMenu()}>Fale Comigo</a>
       </nav>
         </>
       )}

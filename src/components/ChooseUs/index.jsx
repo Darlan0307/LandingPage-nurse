@@ -1,5 +1,5 @@
 import './styles.scss'
-import img from '../../assets/choose-us.png'
+import img from '../../assets/vivi-2.png'
 import { BiSolidCheckboxChecked } from "react-icons/bi";
 
 const ChooseUs = () => {

@@ -5,6 +5,8 @@ import Dedicated from '../../Dedicated'
 import HomeServices from '../../HomeServices'
 import ChooseUs from '../../ChooseUs'
 import Depoiment from '../../Depoiment'
+import Location from '../../Location'
+import Rodape from '../../AppFooter'
 
 const Home = () => {
   const container = useRef(null)
@@ -23,6 +25,8 @@ const Home = () => {
         <HomeServices/>
         <ChooseUs/>
         <Depoiment/>
+        <Location/>
+        <Rodape/>
       </div>
     </>
   )

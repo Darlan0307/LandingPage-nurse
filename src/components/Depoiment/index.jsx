@@ -9,7 +9,7 @@ const Depoiment = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
   return (
-    <section className='depoiment'>
+    <section className='depoiment' id='depoimentos'>
       <h2 className='subtitle'>Veja alguns depoimentos dos clientes</h2>
 
       <Swiper

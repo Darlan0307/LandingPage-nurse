@@ -7,7 +7,7 @@ const Dedicated = () => {
   return (
     <section className='section-dedicated'>
       <h2 className='subtitle'>Dedicada a promover o melhor tratamento</h2>
-      <p>Cuidando da sua saúde com carinho e expertise.A Enfermeira Victoria oferece serviços de enfermagem personalizados para você e sua família.</p>
+      <p>Cuidando da sua saúde com carinho e expertise.Victoria oferece serviços de tecnica de enfermagem personalizados para você e sua família.</p>
       <div className='cards'>
         <article className='card'>
           <img src={Avaliacao} alt="imagem de uma enfermeira fazendo avaliação de um paciênte" />
